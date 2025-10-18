@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chinyere Amanda Ndukwe - Data Analyst Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+
+  <link rel="stylesheet" href="css/aos.css" />
+
+  <link rel="stylesheet" href="css/ionicons.min.css" />
+
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/icomoon.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /*======================================
+//--//-->   ABOUT
+======================================*/
+
+    .about-mf .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .about-mf .about-img {
+      margin-bottom: 2rem;
+    }
+
+    .about-mf .about-img img {
+      margin-left: 10px;
+    }
+
+    .skill-mf .progress {
+      /* background-color: #cde1f8; */
+      margin: 0.5rem 0 1.2rem 0;
+      border-radius: 0;
+      height: 0.7rem;
+    }
+
+    .skill-mf .progress .progress-bar {
+      height: 0.7rem;
+      background-color: #ffbd39;
+    }
+
+    /* Animation styles */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
+
+    #typing-animation:before {
+      content: "";
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes typing-cursor {
+      from {
+        width: 5px;
+      }
+
+      to {
+        width: 0;
+      }
+    }
+
+    /* project image zoom effect */
+
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
+
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
+
+    /* From Uiverse.io by PriyanshuGupta28 */
+    .card {
+      height: 20rem;
+      background: lightgrey;
+      background-color: #4158d0;
+      background-image: linear-gradient(43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%);
+      border-top-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      padding: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      transition: 0.5s ease-in-out;
+      margin-top: 3rem;
+    }
+
+    .heading {
+      text-align: center;
+      font-weight: 600;
+      padding-top: 1rem;
+      font-size: large;
+    }
+
+    .input-div {
+      display: flex;
+      margin-top: 1rem;
+      transition: 0.5s ease-in-out;
+    }
+
+    .card input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid black;
+      width: 12rem;
+      padding: 8px;
+      outline: none;
+    }
+
+    .button-div {
+      text-align: center;
+    }
+
+    .submit {
+      margin-top: 3rem;
+      text-align: center;
+      padding: 8px 3rem;
+      border: none;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background-color: white;
+      color: black;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
+    .submit:hover {
+      box-shadow: rgba(44, 43, 43, 0.664) 5px 5px,
+        rgba(45, 45, 45, 0.3) 10px 10px, rgba(60, 59, 59, 0.2) 15px 15px,
+        rgba(54, 53, 53, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+
+    .card input::placeholder {
+      color: black;
+    }
+
+    .input:focus {
+      transition: 0.2s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .input:hover {
+      transition: 0.2s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Chinyere Ndukwe</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item">
+            <a href="#home-section" class="nav-link"><span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-section" class="nav-link"><span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume-section" class="nav-link"><span>Resume</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#project-section" class="nav-link"><span>Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="nav-link"><span>Contact</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+            data-scrollax-parent="true">
+            <div class="one-third js-fullheight order-md-last img" style="background-image: url(images/b.png)">
+              <div class="overlay"></div>
+            </div>
+            <div class="one-forth d-flex align-items-center ftco-animate"
+              data-scrollax=" properties: { translateY: '70%' }">
+              <div class="text">
+                <span class="subheading">Hello!</span>
+                <h1 class="mb-4 mt-3">I'm <span>Chinyere Amanda Ndukwe</span></h1>
+
+                <!-- Element to contain animated typing -->
+                <span id="typing-animation"></span>
+
+                <script>
+                  // Initialize the typing animation
+                  const typingAnimationElement =
+                    document.getElementById("typing-animation");
+
+                  // Create an array of typing text
+                  const typingTexts = ["Data Analyst  "];
+
+                  // Create a function to display the typing animation for a given text
+                  function playTypingAnimation(text) {
+                    // Loop through each character and add it to the element
+                    for (let i = 0; i < text.length; i++) {
+                      setTimeout(() => {
+                        typingAnimationElement.textContent += text[i];
+                      }, i * 200); // Increase the delay to slow down the typing animation
+                    }
+
+                    // Once the animation is complete, reset the text and start over
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = "";
+                      playTypingAnimation(
+                        typingTexts[
+                        (typingTexts.indexOf(text) + 1) % typingTexts.length
+                        ]
+                      );
+                    }, text.length * 200);
+                  }
+
+                  // Start the typing animation loop
+                  playTypingAnimation(typingTexts[0]);
+                </script>
+
+                <br />
+                <br />
+                <h2>A Data Analyst</h2>
+                <h2 class="d-flex" style="margin-bottom: 0">With 5+ years of experience</h2>
+                <br>
+                <p><a href="https://www.linkedin.com/in/vivian-rapheal-amadi-a7307836a/"
+                    class="btn btn-primary py-3 px-4">LinkedIn</a>
+                  <a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="row d-flex align-items-stretch">
+          <!-- <div class="row d-flex"> -->
+          <div class="col-md-6 col-lg-5 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="images/profile.jpg" class="img-fluid rounded-circle b-shadow-a" alt="" />
+                    </div>
+                  </div>
+                  <!-- Details next to profile image -->
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p>
+                        <span class="title-s">Name: </span>
+                        <span>Chinyere Amanda Ndukwe</span>
+                      </p>
+                      <p>
+                        <span class="title-s">Job Role: </span>
+                        <span>Data Analyst</span>
+                      </p>
+                      <p>
+                        <span class="title-s">Experience: </span>
+                        <span>5+ Years</span>
+                      </p>
+                      <p>
+                        <span class="title-s">Location: </span>
+                        <span>Lagos, Nigeria</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-mf">
+                  <p class="title-s">Skills</p>
+                  <span>Power BI</span> <span class="pull-right">95%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <span>Tableau</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <span>SQL</span>
+                  <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <span>Excel</span>
+                  <span class="pull-right">98%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <span>Python</span>
+                  <span class="pull-right">80%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                <h1 class="big">About</h1>
+                <h2 class="mb-4">About Me</h2>
+
+                <p>
+                  Detail-oriented and results-driven Data Analyst with a strong foundation in computer science and over
+                  5 years
+                  of analytical experience. Skilled in leveraging data visualization, SQL, and Power BI to deliver
+                  actionable
+                  insights that drive strategic decision-making. Adept at cleaning, transforming, and modeling complex
+                  datasets
+                  to identify patterns, forecast trends, and support business objectives.
+                </p>
+
+                <ul class="about-info mt-4 px-md-0 px-2">
+                  <li class="d-flex">
+                    <span>Profile:</span> <span>Data Analysis & Visualization</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Domain:</span>
+                    <span>Analytics, Financial Services, Healthcare</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Education:</span>
+                    <span>Post Graduate Diploma in Education - Lagos State University</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Language:</span> <span>English</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>BI Tools:</span>
+                    <span>Microsoft Power BI, Tableau, Power Query, Excel</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Other Skills:</span>
+                    <span>Python (Pandas, NumPy), SQL, Data Modeling, Statistical Analysis</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Certifications:</span>
+                    <span>Microsoft Power BI Data Analyst, SQL for Data Science, Data Visualization with Tableau</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <p class="mb-4">
+                  <span class="number" data-number="5">0</span>
+                  <span>+</span>
+                  <span>&nbsp; Years Analytical Experience</span>
+                </p>
+                <p>
+                  <a href="https://www.linkedin.com/in/vivian-rapheal-amadi-a7307836a/"
+                    class="btn btn-primary py-3 px-3">LinkedIn</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb" id="resume-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Resume</h1>
+          <h2 class="mb-4">Resume</h2>
+          <p>
+            Experienced Data Analyst with expertise in data visualization, SQL, and business intelligence for various
+            sectors.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="big-4">Experience</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2019-Present</span>
+            <h2>Data Analyst</h2>
+            <span class="position">Insight Analytics Solutions Ltd, Lagos, Nigeria</span>
+            <p class="mt-4">
+            <ul>
+              <li>Collected, cleaned, and validated raw datasets from multiple sources to improve reporting accuracy by
+                25%</li>
+              <li>Designed and automated Power BI dashboards to provide executives with real-time business performance
+                insights</li>
+              <li>Conducted in-depth SQL queries to identify market trends, improve sales forecasting, and optimize
+                supply chain operations</li>
+              <li>Partnered with cross-functional teams to translate business requirements into technical data solutions
+              </li>
+              <li>Performed statistical analysis using Excel and Python, reducing customer churn prediction errors by
+                15%</li>
+              <li>Streamlined monthly reporting processes, saving the company 20+ hours per month in manual effort</li>
+              <li>Developed KPI reports for financial, operational, and customer satisfaction metrics</li>
+              <li>Presented data-driven recommendations that supported strategic initiatives and improved revenue by 12%
+              </li>
+              <li>Trained junior analysts on data visualization and SQL best practices</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2010-2018</span>
+            <h2>Office Administrator</h2>
+            <span class="position">Sequa Financial Ltd, Lagos, Nigeria</span>
+            <p class="mt-4">
+            <ul>
+              <li>Managed client records, financial documentation, and administrative operations ensuring 100%
+                compliance</li>
+              <li>Supported financial analysis by preparing reports and maintaining databases</li>
+              <li>Collaborated with management to streamline administrative workflows, reducing errors by 18%</li>
+              <li>Monitored client accounts and prepared financial summaries for quarterly reviews</li>
+              <li>Maintained accurate document filing systems, improving retrieval efficiency by 30%</li>
+              <li>Coordinated meetings, correspondence, and scheduling for senior managers</li>
+              <li>Tracked departmental expenses and prepared budgetary reports</li>
+              <li>Provided customer support and resolved inquiries, enhancing client satisfaction scores</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">1999-2010</span>
+            <h2>Medical Technologist</h2>
+            <span class="position">US Oncology, Lagos, Nigeria</span>
+            <p class="mt-4">
+            <ul>
+              <li>Performed laboratory tests, analyzed results, and reported findings with 100% accuracy compliance</li>
+              <li>Implemented data tracking systems to improve efficiency in test result reporting</li>
+              <li>Collaborated with physicians to interpret lab data and support patient diagnoses</li>
+              <li>Ensured regulatory compliance in laboratory procedures and maintained ISO standards</li>
+              <li>Introduced Excel-based tracking for lab supplies, reducing shortages by 20%</li>
+              <li>Trained junior staff in lab data entry and reporting systems</li>
+              <li>Monitored lab data trends to identify recurring issues and recommend improvements</li>
+              <li>Maintained patient confidentiality and accurate lab records in compliance with HIPAA</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <h1 class="big-4">Education</h1>
+        <div class="underline"></div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2023</span>
+            <h2>Post Graduate Diploma in Education (PGDE)</h2>
+            <span class="position">Lagos State University (LASU), Lagos</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">1999</span>
+            <h2>Higher National Diploma in Computer Science</h2>
+            <span class="position">Institute of Management & Technology, Enugu</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">1997</span>
+            <h2>Ordinary National Diploma in Computer Science</h2>
+            <span class="position">Institute of Management & Technology, Enugu</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">1993</span>
+            <h2>Senior Secondary School Certificate</h2>
+            <span class="position">Oshodi Secondary School, Apapa, Lagos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 text-center ftco-animate">
+          <p>
+            <a href="https://drive.google.com/file/d/1ZVvNhfcvqU9hxjjjwMYY1Ti7xZeSHhmO/view"
+              class="btn btn-primary py-4 px-5" target="_blank">Download CV</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- project section start -->
+
+    <section class="ftco-section" id="project-section">
+
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <span>Portfolio</span>
+          <h2>Recent Projects</h2>
+          <p>Aviation analytics and data visualization projects</p>
+        </div>
+    
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-item" data-project="1">
+              <img src="./images/project1.png" class="project-img" alt="Air Traffic Dashboard">
+              <div class="project-overlay">
+                <h3 class="project-title">HR Analytics Dashboard
+</h3>
+                <p class="project-category">Tableau, Excel</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-item" data-project="2">
+              <img src="./images/project2.png" class="project-img" alt="Flight Performance Analytics">
+              <div class="project-overlay">
+                <h3 class="project-title">Sales Forecasting Dashboard
+</h3>
+                <p class="project-category">Power BI, SQL</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-item" data-project="3">
+              <img src="./images/project3.png" class="project-img" alt="Aircraft Maintenance Tracker">
+              <div class="project-overlay">
+                <h3 class="project-title">Employee Productivity Insights
+</h3>
+                <p class="project-category">Power BI, Excel</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-item" data-project="4">
+              <img src="./images/project4.png" class="project-img" alt="Aviation Safety Analysis">
+              <div class="project-overlay">
+                <h3 class="project-title">Customer Segmentation Dashboard</h3>
+                <p class="project-category">Tableau, SQL</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="project-item" data-project="5">
+              <img src="./images/project5.png" class="project-img" alt="Supersonic Flow Simulation">
+              <div class="project-overlay">
+                <h3 class="project-title">Inventory Management Dashboard
+</h3>
+                <p class="project-category">MATLAB, Data Modeling</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="project-item" data-project="6">
+              <img src="./images/project6.png" class="project-img" alt="Airport Operations Dashboard">
+              <div class="project-overlay">
+                <h3 class="project-title">Finance Performance Tracker</h3>
+                <p class="project-category">Power BI, Excel</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="project-item" data-project="7">
+              <img src="./images/project7.jpg" class="project-img" alt="Navigation Systems Performance">
+              <div class="project-overlay">
+                <h3 class="project-title">Marketing Campaign Dashboard</h3>
+                <p class="project-category">SQL, Power BI</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="project-item" data-project="8">
+              <img src="./images/project8.jpg" class="project-img" alt="Aerodynamic Analysis Report">
+              <div class="project-overlay">
+                <h3 class="project-title">Clinic Operations Dashboard</h3>
+                <p class="project-category">MATLAB, Excel</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="project-item" data-project="9">
+              <img src="./images/project9.jpg" class="project-img" alt="Flight Route Optimization">
+              <div class="project-overlay">
+                <h3 class="project-title">Recruitment Funnel Dashboard</h3>
+                <p class="project-category">Tableau, SQL, Python</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Project Section -->
+
+    <!-- Project Modals -->
+   <!-- ✅ PROJECT MODALS SECTION (All 9 Dashboards) -->
+
+<!-- Project Modal 1 -->
+<div id="project-modal-1" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">HR Analytics Dashboard</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project1.png" class="project-image-large" alt="HR Analytics Dashboard">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>The HR Analytics Dashboard provides actionable insights into employee performance, attrition trends, diversity ratios, and workforce demographics. It enables HR managers to monitor KPIs such as retention rate, employee satisfaction, and hiring pipeline efficiency for strategic workforce planning.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Attrition and retention analysis</li>
+            <li>Workforce demographic visualization</li>
+            <li>Employee satisfaction trend tracking</li>
+            <li>Recruitment and training analysis</li>
+            <li>Department-level KPI insights</li>
+            <li>Dynamic filtering by role, location, and tenure</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Tableau</span>
+          <span class="tech-tag">Excel</span>
+          <span class="tech-tag">Data Cleaning</span>
+          <span class="tech-tag">Visualization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 2 -->
+<div id="project-modal-2" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Sales Forecasting Dashboard</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project2.png" class="project-image-large" alt="Sales Forecasting Dashboard">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>This dashboard empowers businesses with predictive insights into future sales performance using historical data and trend analysis. It supports better inventory planning, revenue projections, and target setting through visual forecasts and key performance comparisons.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Monthly and quarterly revenue forecasts</li>
+            <li>Product and region-wise sales analysis</li>
+            <li>Profit margin tracking</li>
+            <li>Sales pipeline visualization</li>
+            <li>Target vs. actual performance monitoring</li>
+            <li>Predictive insights using SQL queries</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Power BI</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">Predictive Analytics</span>
+          <span class="tech-tag">Data Modeling</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 3 -->
+<div id="project-modal-3" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Employee Productivity Insights</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project3.png" class="project-image-large" alt="Employee Productivity Dashboard">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>This dashboard measures employee productivity metrics such as task completion rate, project efficiency, and work-hour utilization. It helps managers identify performance bottlenecks, track individual and team outputs, and improve organizational effectiveness.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Individual vs. team performance comparison</li>
+            <li>Daily/weekly productivity trends</li>
+            <li>Attendance and time-tracking analysis</li>
+            <li>Employee workload visualization</li>
+            <li>Custom filters for role, department, and KPI</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Power BI</span>
+          <span class="tech-tag">Excel</span>
+          <span class="tech-tag">Data Visualization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 4 -->
+<div id="project-modal-4" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Customer Segmentation Dashboard</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project4.png" class="project-image-large" alt="Customer Segmentation Dashboard">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>The Customer Segmentation Dashboard classifies customers based on demographics, purchase behavior, and engagement patterns. It enables marketing teams to design targeted campaigns and improve conversion through data-driven insights.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Customer grouping using RFM (Recency, Frequency, Monetary) analysis</li>
+            <li>Behavior-based segmentation</li>
+            <li>Customer lifetime value visualization</li>
+            <li>Campaign performance tracking</li>
+            <li>Geographical customer insights</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Tableau</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">Data Mining</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 5 -->
+<div id="project-modal-5" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Inventory Management Dashboard</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project5.png" class="project-image-large" alt="Inventory Management Dashboard">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>This dashboard streamlines inventory tracking, reorder planning, and warehouse efficiency. It helps organizations optimize stock levels, minimize carrying costs, and prevent stockouts through automated inventory insights.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Real-time stock monitoring</li>
+            <li>Low-stock alerts and reorder recommendations</li>
+            <li>Supplier and item-level analysis</li>
+            <li>Warehouse utilization tracking</li>
+            <li>Demand forecasting using historical data</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">MATLAB</span>
+          <span class="tech-tag">Excel</span>
+          <span class="tech-tag">Data Modeling</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 6 -->
+<div id="project-modal-6" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Finance Performance Tracker</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project6.png" class="project-image-large" alt="Finance Performance Tracker">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>The Finance Performance Tracker visualizes revenue, expenses, profit margins, and budget utilization. It empowers finance teams to analyze spending efficiency, forecast financial performance, and improve cost management.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Expense vs. revenue trend analysis</li>
+            <li>Profit margin tracking by category</li>
+            <li>Budget allocation and variance reports</li>
+            <li>Year-over-year growth comparison</li>
+            <li>Financial KPI summary cards</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Power BI</span>
+          <span class="tech-tag">Excel</span>
+          <span class="tech-tag">Financial Analytics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 7 -->
+<div id="project-modal-7" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Marketing Campaign Dashboard</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project7.jpg" class="project-image-large" alt="Marketing Campaign Dashboard">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>This dashboard provides a comprehensive overview of marketing campaign effectiveness, including reach, conversion rates, and ROI. It allows teams to analyze multi-channel performance and optimize marketing spend.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Channel-wise performance tracking</li>
+            <li>Campaign ROI visualization</li>
+            <li>Lead-to-sale conversion funnel</li>
+            <li>Customer acquisition cost monitoring</li>
+            <li>Ad spend vs. conversion trend analysis</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">Power BI</span>
+          <span class="tech-tag">Marketing Analytics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 8 -->
+<div id="project-modal-8" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Clinic Operations Dashboard</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project8.jpg" class="project-image-large" alt="Clinic Operations Dashboard">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>The Clinic Operations Dashboard tracks patient flow, appointment trends, doctor performance, and resource utilization. It supports healthcare administrators in enhancing patient care and operational efficiency.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Daily patient visit and appointment tracking</li>
+            <li>Doctor workload and performance metrics</li>
+            <li>Departmental efficiency reports</li>
+            <li>Wait-time and satisfaction analysis</li>
+            <li>Revenue summary and billing insights</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">MATLAB</span>
+          <span class="tech-tag">Excel</span>
+          <span class="tech-tag">Healthcare Analytics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project Modal 9 -->
+<div id="project-modal-9" class="project-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Recruitment Funnel Dashboard</h2>
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="project-image-container">
+        <img src="./images/project9.jpg" class="project-image-large" alt="Recruitment Funnel Dashboard">
+      </div>
+      <div class="project-details">
+        <div class="project-summary">
+          <h3>Project Summary</h3>
+          <p>The Recruitment Funnel Dashboard visualizes the entire hiring process — from application to onboarding. It highlights hiring bottlenecks, conversion rates, and recruiter efficiency to enhance HR decision-making.</p>
+        </div>
+        <div class="project-features">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Candidate pipeline visualization</li>
+            <li>Stage-wise conversion rates</li>
+            <li>Recruiter performance tracking</li>
+            <li>Hiring source effectiveness analysis</li>
+            <li>Time-to-hire and cost-per-hire metrics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tech">
+        <h4>Technologies Used</h4>
+        <div class="tech-tags">
+          <span class="tech-tag">Tableau</span>
+          <span class="tech-tag">SQL</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Data Automation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- project section end -->
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <h2>I worked on more <span> projects </span></h2>
+          <div class="heading">
+            <h4>
+              I specialize in transforming financial data into actionable insights for government and healthcare
+              organizations
+            </h4>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start of the Contact Section -->
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <!-- Container for layout alignment -->
+    <div class="container">
+      <!-- Section heading -->
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Contact</h1>
+          <!-- Large heading in background -->
+          <h2 class="mb-4">Contact Me</h2>
+          <!-- Section title -->
+          <p>Below are the details to reach out to me!</p>
+          <!-- Description -->
+        </div>
+      </div>
+
+      <!-- Contact info section -->
+      <div class="row d-flex contact-info mb-5">
+        <!-- Address box -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-map-signs"></span>
+              <!-- Map icon -->
+            </div>
+            <h3 class="mb-4">Location</h3>
+            <p>Lagos, Nigeria</p>
+            <!-- User's address -->
+          </div>
+        </div>
+
+        <!-- Contact Number box -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-phone2"></span>
+              <!-- Phone icon -->
+            </div>
+            <h3 class="mb-4">Contact Number</h3>
+            <p><a href="tel:+2348037205454">+234 803 720 5454</a></p>
+            <!-- Clickable phone link -->
+          </div>
+        </div>
+
+        <!-- Email Address box -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-paper-plane"></span>
+              <!-- Email icon -->
+            </div>
+            <h3 class="mb-4">Email Address</h3>
+            <p>
+              <a href="mailto:andukwe97@gmail.com">andukwe97@gmail.com</a>
+            </p>
+            <!-- Clickable email link -->
+          </div>
+        </div>
+
+        <!-- Resume Download box -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-globe"></span>
+              <!-- Globe icon -->
+            </div>
+            <h3 class="mb-4">LinkedIn</h3>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/vivian-rapheal-amadi-a7307836a/">linkedin.com/in/vivian-rapheal-amadi-a7307836a</a>
+            </p>
+            <!-- LinkedIn link -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra contact prompt and form -->
+      <div class="container">
+        <br />
+        <br />
+        <!-- Centered question and button -->
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>
+              Have a <span>Question?</span>
+              <a href="" class="btn btn-primary py-3 px-5">contact me</a>
+              <!-- Call-to-action button -->
+            </h2>
+
+            <!-- Custom form card from Uiverse.io -->
+            <div class="card">
+              <p class="heading"></p>
+              <!-- Optional heading -->
+
+              <!-- Email input -->
+              <div class="input-div">
+                <input type="text" class="input" placeholder="Email" />
+              </div>
+
+              <!-- Phone input -->
+              <div class="input-div">
+                <input class="input" type="text" placeholder="Phone" />
+              </div>
+
+              <!-- Message input -->
+              <div class="input-div">
+                <input class="input" type="text" placeholder="Message" />
+              </div>
+
+              <!-- Submit button -->
+              <div class="button-div">
+                <button class="submit">Submit</button>
+              </div>
+            </div>
+            <!-- End of custom form card -->
+          </div>
+        </div>
+
+        <br />
+
+        <!-- Social media links -->
+        <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+          <li class="ftco-animate normal-txt">Find me on</li>
+          <!-- Label -->
+
+          <!-- LinkedIn profile -->
+          <li class="ftco-animate">
+            <a href="https://www.linkedin.com/in/vivian-rapheal-amadi-a7307836a/">
+              <span class="icon-linkedin"></span>
+            </a>
+          </li>
+        </ul>
+        <br />
+      </div>
+      <!-- End inner container -->
+    </div>
+    <!-- End main container -->
+  </section>
+  <!-- End of Contact Section -->
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i> by
+            <a href="https://www.linkedin.com/in/sagargupta12396/" target="_blank">Sagar Gupta</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
+
+  <script>
+    document.querySelector(".submit").addEventListener("click", function () {
+      const email = document
+        .querySelector('input[placeholder="Email"]')
+        .value.trim();
+      const phone = document
+        .querySelector('input[placeholder="Phone"]')
+        .value.trim();
+      const message = document
+        .querySelector('input[placeholder="Message"]')
+        .value.trim();
+
+      // Simple email and phone validation
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      const phonePattern = /^[0-9]{10}$/;
+
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email.");
+        return;
+      }
+
+      if (!phonePattern.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+      }
+        // If valid, show success and clear fields
+        alert("Submitted successfully");
+
+        document
+          .querySelectorAll(".input")
+          .forEach((input) => (input.value = ""));
+      });
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
